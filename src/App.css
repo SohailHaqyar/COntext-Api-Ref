@@ -1,38 +1,81 @@
+body {
+  background: #1a237e;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
 .App {
+  background: #304ffe;
+  margin: 20px auto;
+  width: 90%;
+  min-width: 700px;
+  color: #eee;
+}
+.navbar {
+  padding: 10px 20px;
+  text-align: center;
+  background: #293fbb;
+}
+.navbar h1 {
+  margin: 10px 0;
+}
+.book-list {
+  margin: 20px;
+  padding: 10px;
+}
+
+.book-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+.book-list li {
+  background: #293fbb;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: all 0.4s ease;
+}
+.book-list li:hover {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+.title {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+.author {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  color: #ddd;
+}
+.empty {
+  margin: 20px;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  padding: 32px;
+  width: 100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  width: 100%;
+  padding: 18px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #000c96;
   color: white;
+  border: 0;
+  border-radius: 3px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  color: white;
+  background: #293fbb;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
